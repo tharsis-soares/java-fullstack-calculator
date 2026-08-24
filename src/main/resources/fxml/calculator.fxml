@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.calculator.controller.CalculatorController"
+      styleClass="calculadora">
+
+    <children>
+        <Label fx:id="display" styleClass="display" text="0" alignment="CENTER_RIGHT"
+               VBox.vgrow="NEVER" maxHeight="70" minHeight="70" prefHeight="70"/>
+
+        <GridPane fx:id="buttonsGrid" styleClass="botoes-grid" hgap="4" vgap="4"
+                  VBox.vgrow="ALWAYS" alignment="CENTER">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+
+            <!-- Linha 1 -->
+            <Button text="C" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="botao-funcao"/>
+            <Button text="CE" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="botao-funcao"/>
+            <Button text="\%" GridPane.columnIndex="2" GridPane.rowIndex="0" styleClass="botao-funcao"/>
+            <Button text="/" GridPane.columnIndex="3" GridPane.rowIndex="0" styleClass="botao-operador"/>
+
+            <!-- Linha 2 -->
+            <Button text="7" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="botao-numero"/>
+            <Button text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="botao-numero"/>
+            <Button text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" styleClass="botao-numero"/>
+            <Button text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" styleClass="botao-operador"/>
+
+            <!-- Linha 3 -->
+            <Button text="4" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="botao-numero"/>
+            <Button text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="botao-numero"/>
+            <Button text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" styleClass="botao-numero"/>
+            <Button text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" styleClass="botao-operador"/>
+
+            <!-- Linha 4 -->
+            <Button text="1" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="botao-numero"/>
+            <Button text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="botao-numero"/>
+            <Button text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" styleClass="botao-numero"/>
+            <Button text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" styleClass="botao-operador"/>
+
+            <!-- Linha 5 -->
+            <Button text="±" GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="botao-funcao"/>
+            <Button text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="botao-numero"/>
+            <Button text="." GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="botao-funcao"/>
+            <Button text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" styleClass="botao-igual"/>
+
+        </GridPane>
+    </children>
+</VBox>

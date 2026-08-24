@@ -1,0 +1,75 @@
+/* ===== Container principal ===== */
+.calculadora {
+    -fx-background-color: #1e1f29;
+    -fx-padding: 12;
+    -fx-background-radius: 18;
+}
+
+/* ===== Display ===== */
+.display {
+    -fx-background-color: #14151d;
+    -fx-background-radius: 12;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 34px;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    -fx-font-weight: 300;
+    -fx-padding: 10 18 10 18;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 6, 0, 0, 2);
+}
+
+/* ===== Grid de botões ===== */
+.botoes-grid {
+    -fx-background-color: transparent;
+}
+
+/* ===== Base de todos os botões ===== */
+.button {
+    -fx-background-radius: 50%;
+    -fx-min-width: 48;
+    -fx-min-height: 48;
+    -fx-max-width: 48;
+    -fx-max-height: 48;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 4, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 1;
+}
+
+/* ===== Números ===== */
+.botao-numero {
+    -fx-background-color: #3a3b4a;
+}
+.botao-numero:hover {
+    -fx-background-color: #46485a;
+}
+
+/* ===== Operadores (+ - * /) ===== */
+.botao-operador {
+    -fx-background-color: #ff9f0a;
+}
+.botao-operador:hover {
+    -fx-background-color: #ffb340;
+}
+
+/* ===== Funções (C, CE, %, ±, .) ===== */
+.botao-funcao {
+    -fx-background-color: #6c6d7a;
+}
+.botao-funcao:hover {
+    -fx-background-color: #85879a;
+}
+
+/* ===== Botão igual ===== */
+.botao-igual {
+    -fx-background-color: #ff9f0a;
+    -fx-font-weight: bold;
+}
+.botao-igual:hover {
+    -fx-background-color: #ffb340;
+}

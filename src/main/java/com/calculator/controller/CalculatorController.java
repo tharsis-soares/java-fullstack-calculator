@@ -1,6 +1,7 @@
 package com.calculator.controller;
 
 import com.calculator.model.CalculatorModel;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -8,10 +9,15 @@ import javafx.scene.layout.GridPane;
 
 public class CalculatorController {
   @FXML
-  private Label displayLabel;
+  private Label display;
 
   @FXML
   private GridPane buttonsGrid;
+
+  @FXML
+private void handleTeste() {
+    System.out.println("Botão clicado!");
+}
 
   private CalculatorModel calculatorModel;
   private boolean scientificMode;
@@ -19,6 +25,7 @@ public class CalculatorController {
   @FXML
   public void initialize() {
     calculatorModel = new CalculatorModel();
+    configuratorButtons();
     updateDisplay();
   }
 
@@ -52,13 +59,13 @@ public class CalculatorController {
                 calculatorModel.calculate();
                 break;
               case "±":
-                calculatorModel.toggleSign();
+                calculatorModel.changeSign();
                 break;
               case "√":
-                calculatorModel.calculateSquareRoot();
+                calculatorModel.squareRoot();
                 break;
               case "%":
-                calculatorModel.calculatePercentage();
+                calculatorModel.percent();
                 break;
               case "Scientific":
                 toggleScientificMode();
@@ -73,16 +80,16 @@ public class CalculatorController {
     }
   }
 
-  private void scientificModeAlternation() {
+  private void toggleScientificMode() {
      scientificMode = !scientificMode;
      updateDisplay();
   }
 
   private void updateDisplay() {
     if(calculatorModel.isError()) {
-      displayLabel.setText("Error");
+      display.setText("Error");
     } else {
-      displayLabel.setText(calculatorModel.getActualValue().toString());
+      display.setText(calculatorModel.getActualValue().toString());
     }
   }
 

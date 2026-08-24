@@ -59,18 +59,17 @@ public class CalculatorModel {
         }
     }
 
-    public void setOperator(String operator) {
-
-        if(this.operator != null && !newNumber) {
-            calculate();
-        }
-
-        this.operator = operator;
-        newNumber = true;
+   public void setOperator(String operator) {
+    if(this.operator != null && !newNumber) {
+        calculate();
     }
+    memoryValue = actualValue;   // <-- linha que faltava
+    this.operator = operator;
+    newNumber = true;
+}
 
     public void calculate() {
-        if(operator == null || memoryValue == null || errnor) {
+        if(operator == null || memoryValue == null || error) {
             return;
         }
 

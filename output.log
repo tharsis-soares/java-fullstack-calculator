@@ -1,0 +1,731 @@
+[1mApache Maven 3.8.7[m
+Maven home: /usr/share/maven
+Java version: 21.0.11, vendor: Ubuntu, runtime: /usr/lib/jvm/java-21-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "7.0.0-30-generic", arch: "amd64", family: "unix"
+[[1;36mDEBUG[m] Created new class realm maven.api
+[[1;36mDEBUG[m] Importing foreign packages into class realm maven.api
+[[1;36mDEBUG[m]   Imported: javax.annotation.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.annotation.security.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.classrealm < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.cli < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.exception < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution.scope < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.model < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.monitor < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.plugin < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.profiles < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.project < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.reporting < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.rtinfo < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.settings < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.toolchain < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.usability < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.events < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.observers < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.resource < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.component < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.container < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.context < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.logging < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.personality < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.collection < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.deployment < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.graph < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.installation < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.metadata < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.resolution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.spi < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.transfer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.version < plexus.core
+[[1;36mDEBUG[m]   Imported: org.fusesource.jansi.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.event.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.helpers.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.spi.* < plexus.core
+[[1;36mDEBUG[m] Populating class realm maven.api
+[[1;34mINFO[m] Error stacktraces are turned on.
+[[1;36mDEBUG[m] Message scheme: color
+[[1;36mDEBUG[m] Message styles: [1;36mdebug[m [1;34minfo[m [1;33mwarning[m [1;31merror[m [1;32msuccess[m [1;31mfailure[m [1mstrong[m [32mmojo[m [36mproject[m
+[[1;36mDEBUG[m] Reading global settings from /usr/share/maven/conf/settings.xml
+[[1;36mDEBUG[m] Reading user settings from /home/tharsis-soares/.m2/settings.xml
+[[1;36mDEBUG[m] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[[1;36mDEBUG[m] Reading user toolchains from /home/tharsis-soares/.m2/toolchains.xml
+[[1;36mDEBUG[m] Using local repository at /home/tharsis-soares/.m2/repository
+[[1;36mDEBUG[m] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/tharsis-soares/.m2/repository
+[[1;34mINFO[m] Scanning for projects...
+[[1;36mDEBUG[m] Extension realms for project com.calculator:calculator-javafx:jar:1.0-SNAPSHOT: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Resolving plugin prefix javafx from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix javafx to org.openjfx:javafx-maven-plugin from POM com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] === REACTOR BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project: com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Tasks:   [javafx:run]
+[[1;36mDEBUG[m] Style:   Regular
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.calculator:calculator-javafx[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding calculator-javafx 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;36mDEBUG[m] Resolving plugin prefix javafx from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix javafx to org.openjfx:javafx-maven-plugin from POM com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] === PROJECT BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project:       com.calculator:calculator-javafx:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [runtime]
+[[1;36mDEBUG[m] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] --- init fork of com.calculator:calculator-javafx:1.0-SNAPSHOT for org.openjfx:javafx-maven-plugin:0.0.8:run (default-cli) ---
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [compile]
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[[1;36mDEBUG[m] --- exit fork of com.calculator:calculator-javafx:1.0-SNAPSHOT for org.openjfx:javafx-maven-plugin:0.0.8:run (default-cli) ---
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.openjfx:javafx-maven-plugin:0.0.8:run (default-cli)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <async default-value="false">${javafx.async}</async>
+  <asyncDestroyOnShutdown default-value="true">${javafx.asyncDestroyOnShutdown}</asyncDestroyOnShutdown>
+  <basedir default-value="${basedir}"/>
+  <builddir default-value="${project.build.directory}"/>
+  <commandlineArgs>${javafx.args}</commandlineArgs>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <executable default-value="java">${javafx.executable}</executable>
+  <includePathExceptionsInClasspath default-value="false">${javafx.includePathExceptionsInClasspath}</includePathExceptionsInClasspath>
+  <mainClass>com.calculator.CalculatorApp</mainClass>
+  <outputFile>${javafx.outputFile}</outputFile>
+  <project default-value="${project}"/>
+  <runtimePathOption>${javafx.runtimePathOption}</runtimePathOption>
+  <session default-value="${session}"/>
+  <skip default-value="false">${javafx.skip}</skip>
+  <workingDirectory>${javafx.workingDirectory}</workingDirectory>
+</configuration>
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mjavafx-maven-plugin:0.0.8:run[m [1m(default-cli)[0;1m > [0;1mprocess-classes[m @ [36mcalculator-javafx[0;1m >>>[m
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=1586685, ConflictMarker.markTime=275715, ConflictMarker.nodeCount=17, ConflictIdSorter.graphTime=946945, ConflictIdSorter.topsortTime=1001462, ConflictIdSorter.conflictIdCount=8, ConflictIdSorter.conflictIdCycleCount=4, ConflictResolver.totalTime=6985681, ConflictResolver.conflictItemCount=11, DefaultDependencyCollector.collectTime=74758702, DefaultDependencyCollector.transformTime=14803830}
+[[1;36mDEBUG[m] com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m]    org.openjfx:javafx-controls:jar:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-controls:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-graphics:jar:17.0.2:compile
+[[1;36mDEBUG[m]          org.openjfx:javafx-graphics:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]          org.openjfx:javafx-base:jar:17.0.2:compile
+[[1;36mDEBUG[m]             org.openjfx:javafx-base:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]    org.openjfx:javafx-fxml:jar:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-fxml:jar:linux:17.0.2:compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcalculator-javafx[0;1m ---[m
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for central (http://repo1.maven.org/maven2).
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=701932, ConflictMarker.markTime=354514, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=318093, ConflictIdSorter.topsortTime=74713, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4685500, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=241308919, DefaultDependencyCollector.transformTime=6274025}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-project:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[[1;36mDEBUG[m]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[[1;36mDEBUG[m]       commons-cli:commons-cli:jar:1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[[1;36mDEBUG[m]       classworlds:classworlds:jar:1.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-model:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[[1;36mDEBUG[m]       junit:junit:jar:3.8.1:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[[1;36mDEBUG[m]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[[1;36mDEBUG[m]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[[1;36mDEBUG[m]   Included: commons-cli:commons-cli:jar:1.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[[1;36mDEBUG[m]   Included: junit:junit:jar:3.8.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[[1;36mDEBUG[m]   (f) buildFilters = []
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) escapeWindowsPaths = true
+[[1;36mDEBUG[m]   (s) includeEmptyDirs = false
+[[1;36mDEBUG[m]   (s) outputDirectory = /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes
+[[1;36mDEBUG[m]   (s) overwrite = false
+[[1;36mDEBUG[m]   (f) project = MavenProject: com.calculator:calculator-javafx:1.0-SNAPSHOT @ /home/tharsis-soares/reefsys/java-fullstack-calculator/pom.xml
+[[1;36mDEBUG[m]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@543e593
+[[1;36mDEBUG[m]   (f) supportMultiLineFiltering = false
+[[1;36mDEBUG[m]   (f) useBuildFilters = true
+[[1;36mDEBUG[m]   (s) useDefaultDelimiters = true
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] properties used {env.TERM=xterm-256color, java.specification.version=21, sun.arch.data.model=64, java.vendor.url=https://ubuntu.com/, env.CLUTTER_DISABLE_MIPMAPPED_TEXT=1, sun.boot.library.path=/usr/lib/jvm/java-21-openjdk-amd64/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher javafx:run -X, jdk.debug=release, maven.version=3.8.7, jansi.mode=force, java.specification.vendor=Oracle Corporation, java.version.date=2026-04-21, java.home=/usr/lib/jvm/java-21-openjdk-amd64, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, env.NVM_BIN=/home/tharsis-soares/.nvm/versions/node/v24.11.0/bin, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=21.0.11+10-1-24.04.2-Ubuntu, env.LSCOLORS=Gxfxcxdxbxegedabagacad, env.PATH=/home/tharsis-soares/.opencode/bin:/home/tharsis-soares/.local/bin:/home/tharsis-soares/google-cloud-sdk/bin:/home/tharsis-soares/develop/flutter/bin:/home/tharsis-soares/.local/bin:/usr/lib/jvm/java-21-openjdk-amd64/bin:/home/tharsis-soares/.nvm/versions/node/v24.11.0/bin:/home/tharsis-soares/develop/flutter/bin:/home/tharsis-soares/develop/flutter/bin:/home/tharsis-soares/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tharsis-soares/Android/Sdk/platform-tools:/home/tharsis-soares/Android/Sdk/emulator:/home/tharsis-soares/tharsis-soares/apache-tomcat-10.1.41/bin:/opt/tomcat/bin, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:, file.encoding=UTF-8, env._=/usr/bin/mvn, env.XDG_SESSION_DESKTOP=ubuntu, env.SHLVL=1, java.io.tmpdir=/tmp, env.GSM_SKIP_SSH_AGENT_WORKAROUND=true, java.version=21.0.11, java.vm.specification.name=Java Virtual Machine Specification, env.GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/f9a5f18c_8e3f_4175_830f_73fa94165418, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, stderr.encoding=UTF-8, java.vendor=Ubuntu, classworlds.conf=/usr/share/maven/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.ZNVOU3, env.SESSION_MANAGER=local/tharsis-soares:@/tmp/.ICE-unix/10448,unix/tharsis-soares:/tmp/.ICE-unix/10448, env.LANG=en_US.UTF-8, env.XDG_DATA_DIRS=/home/tharsis-soares/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop, java.vm.specification.version=21, os.name=Linux, env.DISPLAY=:0, maven.compiler.source=17, user.home=/home/tharsis-soares, env.ZSH=/home/tharsis-soares/.oh-my-zsh, env.COLORTERM=truecolor, env.DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus, stdout.encoding=UTF-8, path.separator=:, env.GNOME_TERMINAL_SERVICE=:1.120, os.version=7.0.0-30-generic, java.vm.name=OpenJDK 64-Bit Server VM, env.SHELL=/usr/bin/zsh, env.GTK_MODULES=gail:atk-bridge, env.VTE_VERSION=7600, env.USERNAME=tharsis-soares, os.arch=amd64, maven.multiModuleProjectDirectory=/home/tharsis-soares/reefsys/java-fullstack-calculator, env.DESKTOP_SESSION=ubuntu, env.MAVEN_PROJECTBASEDIR=/home/tharsis-soares/reefsys/java-fullstack-calculator, java.vm.info=mixed mode, sharing, env.SYSTEMD_EXEC_PID=10479, env.USER=tharsis-soares, java.class.version=65.0, sun.jnu.encoding=UTF-8, env.NVM_INC=/home/tharsis-soares/.nvm/versions/node/v24.11.0/include/node, env.GNOME_SETUP_DISPLAY=:1, env.CATALINA_HOME=/opt/tomcat, maven.build.version=Apache Maven 3.8.7, env.MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=, maven.home=/usr/share/maven, env.JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64, env.GDMSESSION=ubuntu, file.separator=/, env.LESS=-R, java.vm.compressedOopsMode=Zero based, line.separator=
+, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, user.name=tharsis-soares, env.LOGNAME=tharsis-soares, env.SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, env.XDG_RUNTIME_DIR=/run/user/1000, env.ANDROID_HOME=/home/tharsis-soares/Android/Sdk, env.XMODIFIERS=@im=ibus, maven.compiler.target=17, env.XDG_SESSION_TYPE=wayland, library.jansi.path=/usr/share/maven/lib/jansi-native, env.XDG_SESSION_CLASS=user, env.OLDPWD=/home/tharsis-soares/reefsys/java-fullstack-calculator, env.PWD=/home/tharsis-soares/reefsys/java-fullstack-calculator, env.PAGER=less, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, env.HOME=/home/tharsis-soares, env.QT_IM_MODULE=ibus, java.vm.vendor=Ubuntu, maven.conf=/usr/share/maven/conf, javafx.version=17.0.2, sun.java.launcher=SUN_STANDARD, user.country=US, env.QT_ACCESSIBILITY=1, sun.cpu.endian=little, user.language=en, env.NVM_DIR=/home/tharsis-soares/.nvm, env.WAYLAND_DISPLAY=wayland-0, env.XDG_MENU_PREFIX=gnome-, java.runtime.name=OpenJDK Runtime Environment, project.build.sourceEncoding=UTF-8, env.NVM_CD_FLAGS=-q, env.MAVEN_CMD_LINE_ARGS= javafx:run -X, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-21, user.dir=/home/tharsis-soares/reefsys/java-fullstack-calculator, env.MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure, env.XDG_CURRENT_DESKTOP=ubuntu:GNOME, java.vm.version=21.0.11+10-1-24.04.2-Ubuntu, env.GNOME_SHELL_SESSION_MODE=ubuntu}
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;36mDEBUG[m] resource with targetPath null
+directory /home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/resources
+excludes []
+includes []
+[[1;36mDEBUG[m] ignoreDelta true
+[[1;34mINFO[m] Copying 3 resources
+[[1;36mDEBUG[m] file calculator.fxml has a filtered file extension
+[[1;36mDEBUG[m] copy /home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/resources/fxml/calculator.fxml to /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes/fxml/calculator.fxml
+[[1;36mDEBUG[m] file minimo.fxml has a filtered file extension
+[[1;36mDEBUG[m] copy /home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/resources/fxml/minimo.fxml to /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes/fxml/minimo.fxml
+[[1;36mDEBUG[m] file style.css has a filtered file extension
+[[1;36mDEBUG[m] copy /home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/resources/styles/style.css to /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes/styles/style.css
+[[1;36mDEBUG[m] no use filter components
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mcalculator-javafx[0;1m ---[m
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=1250156, ConflictMarker.markTime=801927, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=484483, ConflictIdSorter.topsortTime=138827, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4904048, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=282246530, DefaultDependencyCollector.transformTime=7654826}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-project:jar:2.0.9:compile
+[[1;36mDEBUG[m]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[[1;36mDEBUG[m]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile (version managed from default)
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[[1;36mDEBUG[m]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[[1;36mDEBUG[m]          log4j:log4j:jar:1.2.12:compile
+[[1;36mDEBUG[m]          commons-logging:commons-logging-api:jar:1.1:compile
+[[1;36mDEBUG[m]       com.google.collections:google-collections:jar:1.0:compile
+[[1;36mDEBUG[m]       junit:junit:jar:3.8.2:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[[1;36mDEBUG[m]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[[1;36mDEBUG[m]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[[1;36mDEBUG[m]   Included: log4j:log4j:jar:1.2.12
+[[1;36mDEBUG[m]   Included: commons-logging:commons-logging-api:jar:1.1
+[[1;36mDEBUG[m]   Included: com.google.collections:google-collections:jar:1.0
+[[1;36mDEBUG[m]   Included: junit:junit:jar:3.8.2
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[[1;36mDEBUG[m]   (f) basedir = /home/tharsis-soares/reefsys/java-fullstack-calculator
+[[1;36mDEBUG[m]   (f) buildDirectory = /home/tharsis-soares/reefsys/java-fullstack-calculator/target
+[[1;36mDEBUG[m]   (f) classpathElements = [/home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar]
+[[1;36mDEBUG[m]   (f) compileSourceRoots = [/home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/java]
+[[1;36mDEBUG[m]   (f) compilerId = javac
+[[1;36mDEBUG[m]   (f) debug = true
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) failOnError = true
+[[1;36mDEBUG[m]   (f) forceJavacCompilerUse = false
+[[1;36mDEBUG[m]   (f) fork = false
+[[1;36mDEBUG[m]   (f) generatedSourcesDirectory = /home/tharsis-soares/reefsys/java-fullstack-calculator/target/generated-sources/annotations
+[[1;36mDEBUG[m]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[[1;36mDEBUG[m]   (f) optimize = false
+[[1;36mDEBUG[m]   (f) outputDirectory = /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes
+[[1;36mDEBUG[m]   (f) projectArtifact = com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m]   (f) showDeprecation = false
+[[1;36mDEBUG[m]   (f) showWarnings = false
+[[1;36mDEBUG[m]   (f) skipMultiThreadWarning = false
+[[1;36mDEBUG[m]   (f) source = 17
+[[1;36mDEBUG[m]   (f) staleMillis = 0
+[[1;36mDEBUG[m]   (f) target = 17
+[[1;36mDEBUG[m]   (f) useIncrementalCompilation = true
+[[1;36mDEBUG[m]   (f) verbose = false
+[[1;36mDEBUG[m]   (f) mavenSession = org.apache.maven.execution.MavenSession@543e593
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@543e593
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] Using compiler 'javac'.
+[[1;36mDEBUG[m] Source directories: [/home/tharsis-soares/reefsys/java-fullstack-calculator/src/main/java]
+[[1;36mDEBUG[m] Classpath: [/home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar
+ /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar]
+[[1;36mDEBUG[m] Output directory: /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes
+[[1;36mDEBUG[m] CompilerReuseStrategy: reuseCreated
+[[1;36mDEBUG[m] useIncrementalCompilation enabled
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mjavafx-maven-plugin:0.0.8:run[m [1m(default-cli)[0;1m < [0;1mprocess-classes[m @ [36mcalculator-javafx[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=148651, ConflictMarker.markTime=40634, ConflictMarker.nodeCount=17, ConflictIdSorter.graphTime=46871, ConflictIdSorter.topsortTime=62070, ConflictIdSorter.conflictIdCount=8, ConflictIdSorter.conflictIdCycleCount=4, ConflictResolver.totalTime=321784, ConflictResolver.conflictItemCount=11, DefaultDependencyCollector.collectTime=1000369, DefaultDependencyCollector.transformTime=649666}
+[[1;36mDEBUG[m] com.calculator:calculator-javafx:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m]    org.openjfx:javafx-controls:jar:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-controls:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-graphics:jar:17.0.2:compile
+[[1;36mDEBUG[m]          org.openjfx:javafx-graphics:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]          org.openjfx:javafx-base:jar:17.0.2:compile
+[[1;36mDEBUG[m]             org.openjfx:javafx-base:jar:linux:17.0.2:compile
+[[1;36mDEBUG[m]    org.openjfx:javafx-fxml:jar:17.0.2:compile
+[[1;36mDEBUG[m]       org.openjfx:javafx-fxml:jar:linux:17.0.2:compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjavafx-maven-plugin:0.0.8:run[m [1m(default-cli)[m @ [36mcalculator-javafx[0;1m ---[m
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for repository.jboss.org (http://repository.jboss.org/maven2).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for snapshots.jboss.org (http://snapshots.jboss.org/maven2).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for oss.sonatype.org/jboss-snapshots (http://oss.sonatype.org/content/repositories/jboss-snapshots).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for ow2-snapshot (http://repository.ow2.org/nexus/content/repositories/snapshots).
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=343690, ConflictMarker.markTime=125775, ConflictMarker.nodeCount=96, ConflictIdSorter.graphTime=217677, ConflictIdSorter.topsortTime=94365, ConflictIdSorter.conflictIdCount=48, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2829810, ConflictResolver.conflictItemCount=94, DefaultDependencyCollector.collectTime=308268236, DefaultDependencyCollector.transformTime=3665027}
+[[1;36mDEBUG[m] org.openjfx:javafx-maven-plugin:jar:0.0.8
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-artifact:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3:compile
+[[1;36mDEBUG[m]          javax.enterprise:cdi-api:jar:1.0:compile
+[[1;36mDEBUG[m]             javax.annotation:jsr250-api:jar:1.0:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-classworlds:jar:2.5.2:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-java:jar:0.9.11:compile
+[[1;36mDEBUG[m]       org.ow2.asm:asm:jar:7.0-beta:compile
+[[1;36mDEBUG[m]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-archiver:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-io:jar:3.0.1:compile
+[[1;36mDEBUG[m]          commons-io:commons-io:jar:2.6:compile
+[[1;36mDEBUG[m]       org.apache.commons:commons-compress:jar:1.16.1:compile
+[[1;36mDEBUG[m]          org.objenesis:objenesis:jar:2.6:compile
+[[1;36mDEBUG[m]       org.iq80.snappy:snappy:jar:0.4:compile
+[[1;36mDEBUG[m]       org.tukaani:xz:jar:1.8:runtime
+[[1;36mDEBUG[m]    org.apache.commons:commons-exec:jar:1.3:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings-builder:jar:3.6.0:compile
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-interpolation:jar:1.25:compile
+[[1;36mDEBUG[m]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile
+[[1;36mDEBUG[m]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-builder-support:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model-builder:jar:3.6.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-resolver-provider:jar:3.6.0:compile
+[[1;36mDEBUG[m]          org.slf4j:slf4j-api:jar:1.7.25:compile
+[[1;36mDEBUG[m]       org.apache.maven.resolver:maven-resolver-impl:jar:1.3.1:compile
+[[1;36mDEBUG[m]       org.apache.maven.resolver:maven-resolver-api:jar:1.3.1:compile
+[[1;36mDEBUG[m]       org.apache.maven.resolver:maven-resolver-spi:jar:1.3.1:compile
+[[1;36mDEBUG[m]       org.apache.maven.resolver:maven-resolver-util:jar:1.3.1:compile
+[[1;36mDEBUG[m]       org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[[1;36mDEBUG[m]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3:compile
+[[1;36mDEBUG[m]       com.google.inject:guice:jar:no_aop:4.2.1:compile
+[[1;36mDEBUG[m]          aopalliance:aopalliance:jar:1.0:compile
+[[1;36mDEBUG[m]          com.google.guava:guava:jar:25.1-android:compile
+[[1;36mDEBUG[m]             com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[[1;36mDEBUG[m]             org.checkerframework:checker-compat-qual:jar:2.0.0:compile
+[[1;36mDEBUG[m]             com.google.errorprone:error_prone_annotations:jar:2.1.3:compile
+[[1;36mDEBUG[m]             com.google.j2objc:j2objc-annotations:jar:1.1:compile
+[[1;36mDEBUG[m]             org.codehaus.mojo:animal-sniffer-annotations:jar:1.14:compile
+[[1;36mDEBUG[m]       javax.inject:javax.inject:jar:1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[[1;36mDEBUG[m]       org.apache.commons:commons-lang3:jar:3.8.1:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.openjfx:javafx-maven-plugin:0.0.8
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.openjfx:javafx-maven-plugin:0.0.8
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.openjfx:javafx-maven-plugin:0.0.8
+[[1;36mDEBUG[m]   Included: org.openjfx:javafx-maven-plugin:jar:0.0.8
+[[1;36mDEBUG[m]   Included: javax.enterprise:cdi-api:jar:1.0
+[[1;36mDEBUG[m]   Included: javax.annotation:jsr250-api:jar:1.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-java:jar:0.9.11
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm:jar:7.0-beta
+[[1;36mDEBUG[m]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-archiver:jar:3.6.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-io:jar:3.0.1
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.6
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-compress:jar:1.16.1
+[[1;36mDEBUG[m]   Included: org.objenesis:objenesis:jar:2.6
+[[1;36mDEBUG[m]   Included: org.iq80.snappy:snappy:jar:0.4
+[[1;36mDEBUG[m]   Included: org.tukaani:xz:jar:1.8
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-exec:jar:1.3
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.25
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-builder-support:jar:3.6.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.resolver:maven-resolver-util:jar:1.3.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[[1;36mDEBUG[m]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3
+[[1;36mDEBUG[m]   Included: com.google.inject:guice:jar:no_aop:4.2.1
+[[1;36mDEBUG[m]   Included: aopalliance:aopalliance:jar:1.0
+[[1;36mDEBUG[m]   Included: com.google.guava:guava:jar:25.1-android
+[[1;36mDEBUG[m]   Included: com.google.code.findbugs:jsr305:jar:3.0.2
+[[1;36mDEBUG[m]   Included: org.checkerframework:checker-compat-qual:jar:2.0.0
+[[1;36mDEBUG[m]   Included: com.google.errorprone:error_prone_annotations:jar:2.1.3
+[[1;36mDEBUG[m]   Included: com.google.j2objc:j2objc-annotations:jar:1.1
+[[1;36mDEBUG[m]   Included: org.codehaus.mojo:animal-sniffer-annotations:jar:1.14
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-lang3:jar:3.8.1
+[[1;36mDEBUG[m] Configuring mojo org.openjfx:javafx-maven-plugin:0.0.8:run from plugin realm ClassRealm[plugin>org.openjfx:javafx-maven-plugin:0.0.8, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[[1;36mDEBUG[m] Configuring mojo 'org.openjfx:javafx-maven-plugin:0.0.8:run' with basic configurator -->
+[[1;36mDEBUG[m]   (f) async = false
+[[1;36mDEBUG[m]   (f) asyncDestroyOnShutdown = true
+[[1;36mDEBUG[m]   (f) basedir = /home/tharsis-soares/reefsys/java-fullstack-calculator
+[[1;36mDEBUG[m]   (f) builddir = /home/tharsis-soares/reefsys/java-fullstack-calculator/target
+[[1;36mDEBUG[m]   (f) compilePath = [/home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar]
+[[1;36mDEBUG[m]   (f) executable = java
+[[1;36mDEBUG[m]   (f) includePathExceptionsInClasspath = false
+[[1;36mDEBUG[m]   (f) mainClass = com.calculator.CalculatorApp
+[[1;36mDEBUG[m]   (f) project = MavenProject: com.calculator:calculator-javafx:1.0-SNAPSHOT @ /home/tharsis-soares/reefsys/java-fullstack-calculator/pom.xml
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@543e593
+[[1;36mDEBUG[m]   (f) skip = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] Executable [/usr/lib/jvm/java-21-openjdk-amd64/bin/java]
+[[1;36mDEBUG[m] Total dependencyArtifacts: 9
+[[1;36mDEBUG[m] module descriptor path: null
+[[1;36mDEBUG[m] Classpath:1
+[[1;36mDEBUG[m]  /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes
+[[1;36mDEBUG[m] Modulepath: 8
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar
+[[1;36mDEBUG[m] pathElements: 9
+[[1;36mDEBUG[m]  /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes :: null
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar :: javafx.base
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar :: javafx.baseEmpty
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar :: javafx.controls
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar :: javafx.controlsEmpty
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar :: javafx.fxml
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar :: javafx.fxmlEmpty
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar :: javafx.graphics
+[[1;36mDEBUG[m]  /home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar :: javafx.graphicsEmpty
+[[1;36mDEBUG[m] Executing command line: [/usr/lib/jvm/java-21-openjdk-amd64/bin/java, --module-path, /home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-linux.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-linux.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-linux.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-linux.jar:/home/tharsis-soares/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar, --add-modules, javafx.base,javafx.controls,javafx.fxml,javafx.graphics, -classpath, /home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes, com.calculator.CalculatorApp]
+Exception in Application start method
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1156)
+Caused by: java.lang.RuntimeException: Exception in Application start method
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:901)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: javafx.fxml.LoadException: Missing resource key.
+/home/tharsis-soares/reefsys/java-fullstack-calculator/target/classes/fxml/calculator.fxml:25
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2703)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.resolvePrefixedValue(FXMLLoader.java:423)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processValue(FXMLLoader.java:373)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processPropertyAttribute(FXMLLoader.java:335)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processInstancePropertyAttributes(FXMLLoader.java:245)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:778)
+	at javafx.fxml/javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2924)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2639)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3331)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3287)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3255)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3227)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3203)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3196)
+	at com.calculator.CalculatorApp.start(CalculatorApp.java:12)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:847)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:484)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:290)
+	... 1 more
+Exception running application com.calculator.CalculatorApp
+[[1;31mERROR[m] Command execution failed.
+[1;31morg.apache.commons.exec.ExecuteException[m: [1;31mProcess exited with an error: 1 (Exit value: 1)[m
+    [1mat[m org.apache.commons.exec.DefaultExecutor.executeInternal ([1mDefaultExecutor.java:404[m)
+    [1mat[m org.apache.commons.exec.DefaultExecutor.execute ([1mDefaultExecutor.java:166[m)
+    [1mat[m org.openjfx.JavaFXBaseMojo.executeCommandLine ([1mJavaFXBaseMojo.java:567[m)
+    [1mat[m org.openjfx.JavaFXBaseMojo.executeCommandLine ([1mJavaFXBaseMojo.java:434[m)
+    [1mat[m org.openjfx.JavaFXRunMojo.execute ([1mJavaFXRunMojo.java:105[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 ([1mMojoExecutor.java:370[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute ([1mMojoExecutor.java:351[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:171[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:163[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:298[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:567)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:434)
+	at org.openjfx.JavaFXRunMojo.execute(JavaFXRunMojo.java:105)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.046 s
+[[1;34mINFO[m] Finished at: 2026-08-24T19:33:23-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.openjfx:javafx-maven-plugin:0.0.8:run[m [1m(default-cli)[m on project [36mcalculator-javafx[m: [1;31mError[m: Command execution failed. Process exited with an error: 1 (Exit value: 1) -> [1m[Help 1][m
+[1;31morg.apache.maven.lifecycle.LifecycleExecutionException[m: [1;31mFailed to execute goal [32morg.openjfx:javafx-maven-plugin:0.0.8:run[m [1m(default-cli)[m on project [36mcalculator-javafx[m: [1;31mError[m[m
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 ([1mMojoExecutor.java:375[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute ([1mMojoExecutor.java:351[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:171[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:163[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:298[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+[1mCaused by[m: org.apache.maven.plugin.MojoExecutionException: [1;31mError[m
+    [1mat[m org.openjfx.JavaFXRunMojo.execute ([1mJavaFXRunMojo.java:122[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 ([1mMojoExecutor.java:370[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute ([1mMojoExecutor.java:351[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:171[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:163[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:298[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+[1mCaused by[m: org.apache.maven.plugin.MojoExecutionException: [1;31mCommand execution failed.[m
+    [1mat[m org.openjfx.JavaFXRunMojo.execute ([1mJavaFXRunMojo.java:116[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 ([1mMojoExecutor.java:370[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute ([1mMojoExecutor.java:351[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:171[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:163[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:298[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+[1mCaused by[m: org.apache.commons.exec.ExecuteException: [1;31mProcess exited with an error: 1 (Exit value: 1)[m
+    [1mat[m org.apache.commons.exec.DefaultExecutor.executeInternal ([1mDefaultExecutor.java:404[m)
+    [1mat[m org.apache.commons.exec.DefaultExecutor.execute ([1mDefaultExecutor.java:166[m)
+    [1mat[m org.openjfx.JavaFXBaseMojo.executeCommandLine ([1mJavaFXBaseMojo.java:567[m)
+    [1mat[m org.openjfx.JavaFXBaseMojo.executeCommandLine ([1mJavaFXBaseMojo.java:434[m)
+    [1mat[m org.openjfx.JavaFXRunMojo.execute ([1mJavaFXRunMojo.java:105[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 ([1mMojoExecutor.java:370[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute ([1mMojoExecutor.java:351[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:171[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:163[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:298[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+[[1;31mERROR[m] 
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
